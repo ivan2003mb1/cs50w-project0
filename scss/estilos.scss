@@ -1,1 +1,16 @@
-@import "../lib/bootstrap/scss/bootstrap";
+
+//////////////////////////////
+// 1. Patrones de colores
+//////////////////////////////
+$principal:#d2cf14;
+$secundario: #d2cf14;
+$blanco:#273746;
+//////////////////////////////
+/// 2. Modificando las variables de Bootstrap
+//////////////////////////////
+$enable-shadows:true;
+$enable-gradient:true;
+$primary:$principal;
+$light:$blanco;
+
+@import "../libs/bootstrap/scss/bootstrap";
