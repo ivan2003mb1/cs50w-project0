@@ -35,7 +35,7 @@
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
-  --bs-light: #273746;
+  --bs-light: #A6E5F7;
   --bs-dark: #212529;
   --bs-primary-rgb: 218, 247, 166;
   --bs-secondary-rgb: 108, 117, 125;
@@ -43,7 +43,7 @@
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
   --bs-danger-rgb: 220, 53, 69;
-  --bs-light-rgb: 39, 55, 70;
+  --bs-light-rgb: 166, 229, 247;
   --bs-dark-rgb: 33, 37, 41;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
@@ -670,21 +670,19 @@ progress {
 .row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
-  position: relative;
-  display: flex;
+  display: block;
   flex-wrap: wrap;
-  flex: auto;
-  margin-top: calc(-1 * var(--bs-gutter-y));
-  margin-right: calc(-0.5 * var(--bs-gutter-x));
-  margin-left: calc(-0.5 * var(--bs-gutter-x));
+  margin-top: 40px;
+  margin-right: 40px;
+  margin-left: 40px;
 }
 .row > * {
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
-  padding-right: calc(var(--bs-gutter-x) * 0.5);
-  padding-left: calc(var(--bs-gutter-x) * 0.5);
-  margin-top: var(--bs-gutter-y);
+  padding-right: 40px;
+  padding-left: 40px;
+  margin-top: 40px;
 }
 
 .col {
@@ -1901,15 +1899,15 @@ progress {
 }
 
 .table-light {
-  --bs-table-color: #fff;
-  --bs-table-bg: #273746;
-  --bs-table-border-color: #3d4b59;
-  --bs-table-striped-bg: #32414f;
-  --bs-table-striped-color: #fff;
-  --bs-table-active-bg: #3d4b59;
-  --bs-table-active-color: #fff;
-  --bs-table-hover-bg: #374654;
-  --bs-table-hover-color: #fff;
+  --bs-table-color: #000;
+  --bs-table-bg: #A6E5F7;
+  --bs-table-border-color: #95cede;
+  --bs-table-striped-bg: #9edaeb;
+  --bs-table-striped-color: #000;
+  --bs-table-active-bg: #95cede;
+  --bs-table-active-color: #000;
+  --bs-table-hover-bg: #9ad4e4;
+  --bs-table-hover-color: #000;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
 }
@@ -3001,20 +2999,20 @@ textarea.form-control-lg {
 }
 
 .btn-light {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #273746;
-  --bs-btn-border-color: #273746;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #212f3c;
-  --bs-btn-hover-border-color: #1f2c38;
-  --bs-btn-focus-shadow-rgb: 71, 85, 98;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #1f2c38;
-  --bs-btn-active-border-color: #1d2935;
+  --bs-btn-color: #000;
+  --bs-btn-bg: #A6E5F7;
+  --bs-btn-border-color: #A6E5F7;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #8dc3d2;
+  --bs-btn-hover-border-color: #85b7c6;
+  --bs-btn-focus-shadow-rgb: 141, 195, 210;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #85b7c6;
+  --bs-btn-active-border-color: #7dacb9;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #273746;
-  --bs-btn-disabled-border-color: #273746;
+  --bs-btn-disabled-color: #000;
+  --bs-btn-disabled-bg: #A6E5F7;
+  --bs-btn-disabled-border-color: #A6E5F7;
 }
 
 .btn-dark {
@@ -3137,19 +3135,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-light {
-  --bs-btn-color: #273746;
-  --bs-btn-border-color: #273746;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #273746;
-  --bs-btn-hover-border-color: #273746;
-  --bs-btn-focus-shadow-rgb: 39, 55, 70;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #273746;
-  --bs-btn-active-border-color: #273746;
+  --bs-btn-color: #A6E5F7;
+  --bs-btn-border-color: #A6E5F7;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #A6E5F7;
+  --bs-btn-hover-border-color: #A6E5F7;
+  --bs-btn-focus-shadow-rgb: 166, 229, 247;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #A6E5F7;
+  --bs-btn-active-border-color: #A6E5F7;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #273746;
+  --bs-btn-disabled-color: #A6E5F7;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #273746;
+  --bs-btn-disabled-border-color: #A6E5F7;
   --bs-gradient: none;
 }
 
@@ -4236,7 +4234,6 @@ textarea.form-control-lg {
   --bs-card-group-margin: 0.75rem;
   position: relative;
   display: flex;
-  flex: auto;
   flex-direction: column;
   min-width: 0;
   height: var(--bs-card-height);
@@ -4246,8 +4243,6 @@ textarea.form-control-lg {
   border: var(--bs-card-border-width) solid var(--bs-card-border-color);
   border-radius: var(--bs-card-border-radius);
   box-shadow: var(--bs-card-box-shadow);
-  margin-left: 40px;
-
 }
 .card > hr {
   margin-right: 0;
@@ -4782,12 +4777,12 @@ textarea.form-control-lg {
 }
 
 .alert-light {
-  --bs-alert-color: #17212a;
-  --bs-alert-bg: #d4d7da;
-  --bs-alert-border-color: #bec3c8;
+  --bs-alert-color: #425c63;
+  --bs-alert-bg: #edfafd;
+  --bs-alert-border-color: #e4f7fd;
 }
 .alert-light .alert-link {
-  color: #121a22;
+  color: #354a4f;
 }
 
 .alert-dark {
@@ -5185,17 +5180,17 @@ textarea.form-control-lg {
 }
 
 .list-group-item-light {
-  color: #17212a;
-  background-color: #d4d7da;
+  color: #425c63;
+  background-color: #edfafd;
 }
 .list-group-item-light.list-group-item-action:hover, .list-group-item-light.list-group-item-action:focus {
-  color: #17212a;
-  background-color: #bfc2c4;
+  color: #425c63;
+  background-color: #d5e1e4;
 }
 .list-group-item-light.list-group-item-action.active {
   color: #fff;
-  background-color: #17212a;
-  border-color: #17212a;
+  background-color: #425c63;
+  border-color: #425c63;
 }
 
 .list-group-item-dark {
@@ -5878,6 +5873,7 @@ textarea.form-control-lg {
   position: relative;
   width: 100%;
   overflow: hidden;
+  margin: auto;
 }
 .carousel-inner::after {
   display: block;
@@ -6807,8 +6803,8 @@ textarea.form-control-lg {
 }
 
 .text-bg-light {
-  color: #fff !important;
-  background-color: RGBA(39, 55, 70, var(--bs-bg-opacity, 1)) !important;
+  color: #000 !important;
+  background-color: RGBA(166, 229, 247, var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-dark {
@@ -6859,10 +6855,10 @@ textarea.form-control-lg {
 }
 
 .link-light {
-  color: #273746 !important;
+  color: #A6E5F7 !important;
 }
 .link-light:hover, .link-light:focus {
-  color: #1f2c38 !important;
+  color: #b8eaf9 !important;
 }
 
 .link-dark {
