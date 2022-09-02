@@ -1,4 +1,12 @@
 @charset "UTF-8";
+.card {
+  margin: auto;
+}
+
+.titulo {
+  font-family: "fantasy";
+}
+
 /*!
  * Bootstrap  v5.2.0 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -683,7 +691,6 @@ progress {
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-top: var(--bs-gutter-y);
-
 }
 
 .col {
@@ -4244,7 +4251,6 @@ textarea.form-control-lg {
   border: var(--bs-card-border-width) solid var(--bs-card-border-color);
   border-radius: var(--bs-card-border-radius);
   box-shadow: var(--bs-card-box-shadow);
-  margin: auto;
 }
 .card > hr {
   margin-right: 0;

@@ -13,4 +13,19 @@ $enable-gradient:true;
 $primary:$principal;
 $light:$blanco;
 
+%card{
+    margin: auto;
+}
+%titulo{
+    font-family: "fantasy";
+}
+
+.card{
+    @extend %card;
+}
+
+.titulo{
+    @extend %titulo;
+}
+
 @import "../libs/bootstrap/scss/bootstrap";
