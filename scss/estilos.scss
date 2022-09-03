@@ -19,7 +19,12 @@ $light:$blanco;
 %titulo{
     font-family: "fantasy";
 }
+%cambiosbody{
 
+}
+.body{
+    @extend %cambiosbody;
+}
 .card{
     @extend %card;
 }
